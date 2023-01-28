@@ -14,10 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
           message: document.querySelector("#message").value,
         };
 
-        const response = await axios.post(
-          "https://site--back-end-formulaire--nm6dw4wybf2m.code.run/",
-          data
-        );
+        const response =
+          await ("https://site--back-end-formulaire--nm6dw4wybf2m.code.run/",
+          data);
         res.status(200).json(response);
       } catch (error) {
         res.status(400).json({ message: "There is a problem" });
